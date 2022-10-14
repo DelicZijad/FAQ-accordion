@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  transition: all 250ms;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+  font-size: 12px;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    height: 100vh;
+  }
+}
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 8rem;
+}
+@media screen and (min-width: 1024px) {
+  main {
+    padding-block: 0rem;
+    position: relative;
+    position: relative;
+  }
+}
+
+.content {
+  width: 85%;
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  padding-inline: 1.5rem;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  z-index: 5;
+}
+@media screen and (min-width: 1024px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    height: 80%;
+    padding-inline: 3rem;
+    padding-block: 4rem;
+    overflow: hidden;
+  }
+}
+.content--heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .content--heading {
+    text-align: left;
+  }
+}
+.content--tab {
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  border-bottom: 1px solid hsl(240deg, 5%, 91%);
+}
+.content--question {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 100ms;
+}
+.content--question:hover {
+  color: hsl(14deg, 88%, 65%);
+}
+.content--question:focus {
+  font-weight: 700;
+}
+@media screen and (min-width: 1024px) {
+  .content--QA {
+    grid-column: 2;
+  }
+}
+.content--imgDesktop {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .content--imgDesktop {
+    display: block;
+  }
+}
+.content--imgBox {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .content--imgBox {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 200px;
+    height: 200px;
+    transform: translateX(-50%) translateY(-25%);
+    z-index: 10;
+  }
+}
+.content--bgDesktop {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .content--bgDesktop {
+    display: block;
+  }
+}
+.content--imgMobile {
+  z-index: 2;
+}
+@media screen and (min-width: 1024px) {
+  .content--imgMobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content--bgMobile {
+    display: none;
+  }
+}
+.content--img {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-55%);
+  z-index: 5;
+}
+@media screen and (min-width: 1024px) {
+  .content--img {
+    position: absolute;
+    transform: translateX(0%) translateY(0%);
+    height: 350px;
+    width: 400px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(-20%);
+    z-index: -3;
+  }
+}
+.content--img img {
+  height: 100%;
+  width: 100%;
+}
+.content--bg {
+  width: 250px;
+  height: 100x;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 1024px) {
+  .content--bg {
+    height: 400px;
+    width: 450px;
+    top: 50%;
+    left: 0%;
+    transform: translateX(0);
+    transform: translateX(-25%) translateY(-50%);
+    z-index: 20;
+  }
+}
+.content--bg img {
+  height: 100%;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.upside {
+  transform: rotate(180deg);
+}
