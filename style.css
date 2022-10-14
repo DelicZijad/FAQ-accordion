@@ -88,6 +88,16 @@ main {
   font-weight: 700;
 }
 @media screen and (min-width: 1024px) {
+  .content--question {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content--answer {
+    font-size: 0.85rem;
+  }
+}
+@media screen and (min-width: 1024px) {
   .content--QA {
     grid-column: 2;
   }
